@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Coffee machine",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/keurig_cofee_machine.mp4",
+    "description": "Unboxing Keurig: the perfect morning companion"
+  },
+  {
+    "id": "2",
+    "name": "Menorah mask",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/menorah_mask.mp4",
+    "description": "Promotional video for the cosmetic brand ‘Menorah’: showcasing a sheet face mask"
+  },
+  {
+    "id": "3",
+    "name": "Menorah cream",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/menorah_cream.mp4",
+    "description": "Promotional video for the cosmetic brand ‘Menorah’: featuring face and body creams"
+  },
+  {
+    "id": "4",
+    "name": "Hibbett sneakers",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/nike_air_jordan.mp4",
+    "description": "Unboxing Nike Air Jordan Tatum 3: the perfect blend of design and comfort"
+  },
+  {
+    "id": "5",
+    "name": "Hibbett sneakers v.2",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/nike_airforce.mp4",
+    "description": "Unboxing Nike Airforce 1 sneakers: style and details captured in every shot"
+  },
+  {
+    "id": "6",
+    "name": "Ross unpacking",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/unpacking_ross.mov",
+    "description": "Promotional video for the brand ‘Nescafé Dolce Gusto’: capsule coffee in ASMR format"
+  },
+  {
+    "id": "7",
+    "name": "Workout",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/nike_kicks.mov",
+    "description": "Sports-themed video: focusing on a workout and Nike sneakers"
+  },
+  {
+    "id": "8",
+    "name": "Pajama",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/virobnel_pajama.mp4",
+    "description": "Video for the Ukrainian brand ‘Virobnel’: showcasing pajamas in a cozy home setting"
+  }
+]
+
