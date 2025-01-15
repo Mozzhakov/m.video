@@ -1,95 +1,64 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import React, { useEffect } from "react";
+import PageHeader from "@/app/components/page-header";
+import HeroSection from "@/app/components/hero-section";
+import AboutMe from "@/app/components/about-me";
+import Contacts from "@/app/components/contacts";
+import Ugc from "@/app/components/ugc";
+import Videography from "@/app/components/videography";
+import beautyVideos from "../../lib/beauty.json";
+import foodVideos from "../../lib/food.json";
+import portraitVideos from "../../lib/portrait.json";
+import sportVideos from "../../lib/sports.json";
+import ugcVideos from "../../lib/ugc.json";
+import vlogVideos from "../../lib/vlogs.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+export interface VideoData {
+  id: string;
+  name: string;
+  url: string;
+  description: string;
+  poster?: string;
+}
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className="relative">
+      <PageHeader />
+      <main className="pt-[72px]">
+        <HeroSection />
+        <div>
+          <AboutMe isEven={false} />
+          <Ugc isEven={true} videos={ugcVideos} />
+          <Videography
+            isEven={false}
+            sport_videos={sportVideos}
+            beauty_videos={beautyVideos}
+            vlog_videos={vlogVideos}
+            portrait_videos={portraitVideos}
+            food_videos={foodVideos}
+          />
+          <Contacts isEven={true} />
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          closeButton={true}
+          draggable
+          theme="colored"
+        />
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
