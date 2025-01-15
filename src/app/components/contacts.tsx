@@ -58,7 +58,7 @@ export default function Contacts({ isEven }: ContactsProps) {
   };
   return (
     <Section isEven={isEven} id={"contacts"}>
-      <Title>Get in Touch</Title>
+      <Title>Get in touch</Title>
       <div
         data-aos="fade-left"
         className="flex flex-col lg:flex-row gap-8 items-center lg:justify-between"
