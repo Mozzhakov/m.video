@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Logo from "@/app/components/logo";
 import NavLinks from "@/app/components/nav-links";
 import MobileMenuButton from "@/app/components/mobile-menu-button";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export type PageHeaderProps = object;
 
@@ -20,7 +20,10 @@ export default function PageHeader({}: PageHeaderProps) {
           <div className="flex items-center lg:order-2">
             <MobileMenuButton isOpen={isOpen} onToggleMenu={toggleMenu} />
             <Link
-              href="#contacts"
+              offset={-71.09}
+              smooth={true}
+              duration={500}
+              to="contacts"
               className="rounded-lg py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-105 hidden lg:block"
             >
               Contact me

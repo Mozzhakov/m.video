@@ -10,7 +10,7 @@ export default function RadioButtons({
   onChange,
 }: RadioButtonsProps) {
   return (
-    <div className="mb-8 w-fit">
+    <div className="mb-8 w-fit mx-auto ">
       <div className="flex items-center space-x-4 p-2 border rounded-lg shadow-sm">
         <label className="flex items-center space-x-2">
           <input

@@ -65,10 +65,10 @@ export default function Contacts({ isEven }: ContactsProps) {
       >
         <div className="lg:max-w-[50%]">
           <p className="lg:text-2xl text-xl text-gray-600 mb-8 font-medium">
-            Feel free to reach out for collaborations, inquiries, or just to say
-            hi!
+            Feel free to reach out for collaborations, inquiries, <br />
+            or just to say hi!
           </p>
-          <div className="flex flex-col gap-4 mb-6">
+          <div className="flex flex-col gap-4 mb-8">
             <div className="flex items-center gap-2">
               <LuMail className="lg:w-7 lg:h-7 w-5 h-5 text-gray-600 group-hover:text-cyan-400 transition" />
               <p className="text-lg text-gray-600 hover:text-cyan-400 transition">
@@ -86,12 +86,12 @@ export default function Contacts({ isEven }: ContactsProps) {
           </div>
 
           <form
-            className="w-full max-w-md flex flex-col items-center"
+            className="w-full max-w-md flex flex-col items-center "
             data-aos="fade-up"
             onSubmit={onSubmitClick}
           >
-            <fieldset className="w-full">
-              <legend className="text-lg font-semibold text-gray-600 mb-4">
+            <fieldset className="w-full ">
+              <legend className="text-lg font-semibold text-gray-600 mb-4 text-center lg:text-left">
                 Send a Message
               </legend>
               <input
@@ -116,7 +116,7 @@ export default function Contacts({ isEven }: ContactsProps) {
               ></textarea>
               <button
                 type="submit"
-                className="bg-cyan-400 text-white px-6 py-2 rounded-lg hover:scale-105 transition-transform"
+                className="bg-cyan-400 text-white px-6 py-2 rounded-lg hover:scale-105 transition-transform w-full lg:w-fit"
                 disabled={isSending}
               >
                 {isSending ? "Sending..." : "Send Message"}

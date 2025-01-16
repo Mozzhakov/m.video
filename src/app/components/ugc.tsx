@@ -23,7 +23,6 @@ export interface UgcProps {
 
 export default function Ugc({ isEven, videos }: UgcProps) {
   const [selectedMedia, setSelectedMedia] = useState("videos");
-  console.log(videos);
   return (
     <Section isEven={isEven} id={"ugc"}>
       <Title>UGC</Title>

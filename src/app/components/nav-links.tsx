@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export type NavLinksProps = {
   isOpen: boolean;
@@ -8,11 +8,11 @@ export type NavLinksProps = {
 
 export default function NavLinks({ isOpen, onCloseMenu }: NavLinksProps) {
   const links = [
-    { href: "#", label: "Home", isActive: false },
-    { href: "#about-me", label: "About me", isActive: false },
-    { href: "#ugc", label: "UGC", isActive: false },
-    { href: "#videography", label: "Videography", isActive: false },
-    { href: "#contacts", label: "Contacts", isActive: false },
+    { href: "home", label: "Home", isActive: false },
+    { href: "about-me", label: "About me", isActive: false },
+    { href: "ugc", label: "UGC", isActive: false },
+    { href: "videography", label: "Videography", isActive: false },
+    { href: "contacts", label: "Contacts", isActive: false },
   ];
 
   return (
@@ -28,10 +28,14 @@ export default function NavLinks({ isOpen, onCloseMenu }: NavLinksProps) {
           <li
             key={index}
             className="hover:bg-gray-100 group transition px-2 py-1 rounded"
-            onClick={onCloseMenu}
           >
-            <a
-              href={link.href}
+            <Link
+              onClick={onCloseMenu}
+              smooth={true}
+              to={link.href}
+              duration={500} // Время в миллисекундах для плавной анимации
+              offset={-71.09}
+              // href={link.href}
               className={`block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition  ${
                 link.isActive
                   ? "text-cyan-400 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700"
@@ -40,15 +44,19 @@ export default function NavLinks({ isOpen, onCloseMenu }: NavLinksProps) {
               aria-current={link.isActive ? "page" : undefined}
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
       <div className="mt-12">
         <Link
-          href={links[links.length - 1].href}
+          to={links[links.length - 1].href}
+          // href={links[links.length - 1].href}
           className=" lg:hidden rounded py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-[1.1]"
           onClick={onCloseMenu}
+          offset={-71.09}
+          smooth={true}
+          duration={500}
         >
           Contact me
         </Link>

@@ -1,5 +1,5 @@
 .section {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/hero-image.png');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/hero-image.PNG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

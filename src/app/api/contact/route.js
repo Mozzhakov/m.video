@@ -49,5 +49,3 @@ export async function POST(req) {
     });
   }
 }
-
-console.log(process.env.EMAIL_USER);

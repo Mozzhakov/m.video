@@ -9,6 +9,7 @@ export default function HeroSection({}: HeroSectionProps) {
     <section
       className={`flex flex-col lg:flex-row items-center lg:py-10 lg:px-10 justify-around px-4 py-6 ${styles.section}`}
       style={{ height: "calc(100vh - 71.09px)" }}
+      id="home"
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="flex flex-col items-center justify-center">
