@@ -14,7 +14,7 @@ export default function PageHeader({}: PageHeaderProps) {
   const closeMenu = () => setIsOpen(false);
   return (
     <header className="fixed top-0 left-0 z-40 w-full shadow-md bg-white border-gray-200">
-      <nav className=" px-4 lg:px-10 py-2.5 dark:bg-gray-800 h-full mx-auto max-w-screen-xl">
+      <nav className=" px-4 lg:px-10 py-2.5 h-full mx-auto max-w-screen-xl">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Logo />
           <div className="flex items-center lg:order-2">

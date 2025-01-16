@@ -16,6 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import PageFooter from "@/app/components/page-footer";
 
 export interface VideoData {
   id: string;
@@ -59,6 +60,7 @@ export default function Home() {
           theme="colored"
         />
       </main>
+      <PageFooter />
     </div>
   );
 }

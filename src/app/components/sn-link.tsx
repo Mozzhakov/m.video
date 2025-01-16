@@ -10,7 +10,7 @@ export default function SnLink({ href, children }: SnLinkProps) {
   return (
     <Link
       href={href}
-      className="lg:w-12 lg:h-12 w-8 h-8 rounded-full flex items-center justify-center hover:bg-cyan-400 group transition"
+      className="lg:w-12 lg:h-12 w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-400 group transition"
     >
       {children}
     </Link>
