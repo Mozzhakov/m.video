@@ -92,7 +92,11 @@ export default function VideoSlider({
                       controls
                       preload="none"
                       poster={video.poster}
-                      onClick={() => handlePlayVideo(video.id)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        handlePlayVideo(video.id);
+                      }}
                     >
                       <source src={video.url} type="video/mp4" />
                       <source src={video.url} type="video/quicktime" />
