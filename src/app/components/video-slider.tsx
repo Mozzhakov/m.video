@@ -51,14 +51,14 @@ export default function VideoSlider({
     <div className="video-slider-container relative">
       <div className={`prev-${sliderId}`}>
         <MdArrowBackIosNew
-          className={`absolute top-1/2 left-2 z-10 transform -translate-y-1/2 w-7 h-7 hover:scale-110 hover:cursor-pointer ${
+          className={`absolute top-1/2 left-2 lg:-left-7 z-10 transform -translate-y-1/2 w-7 h-7 hover:scale-110 hover:cursor-pointer ${
             isBeginning ? "text-gray-300 pointer-events-none" : "text-cyan-400"
           }`}
         />
       </div>
       <div className={`next-${sliderId}`}>
         <MdArrowForwardIos
-          className={`absolute top-1/2 right-2 z-10 transform -translate-y-1/2 w-7 h-7 hover:scale-110 hover:cursor-pointer ${
+          className={`absolute top-1/2 right-2 lg:-right-7 z-10 transform -translate-y-1/2 w-7 h-7 hover:scale-110 hover:cursor-pointer ${
             isEnd ? "text-gray-300 pointer-events-none" : "text-cyan-400"
           }`}
         />

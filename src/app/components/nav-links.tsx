@@ -41,7 +41,7 @@ export default function NavLinks({
                 to={link.href}
                 duration={500}
                 offset={-71.09}
-                className="block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 "
               >
                 {link.label}
               </Link>
@@ -49,7 +49,7 @@ export default function NavLinks({
               <a
                 href={`/#${link.href}`}
                 onClick={onCloseMenu}
-                className="block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 "
               >
                 {link.label}
               </a>
