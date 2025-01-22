@@ -34,7 +34,11 @@ export default function VideoSlider({
   const handlePlayVideo = (id: string) => {
     const video = videoRef.current[id];
     if (video) {
-      video.play();
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
     }
   };
 
