@@ -59,21 +59,22 @@ export default function PageFooter({}: PageFooterProps) {
         {/* Copyright and Additional Links */}
         <div className="  flex flex-col md:flex-row justify-between items-center text-lg font-medium text-gray-600">
           <Logo />
-          <p className="mt-4 md:mt-0">
-            © {new Date().getFullYear()} M.Video. All rights reserved.
-          </p>
-          <ul className="flex flex-row items-center font-medium gap-3   lg:flex-row mt-4 lg:mt-0">
+
+          <ul className="flex flex-row items-center font-medium gap-3   lg:flex-row mt-3 md:mt-0">
             <li className="hover:bg-gray-100 group transition px-2 py-1 rounded">
-              <Link href="/" className="hover:text-cyan-400">
+              <Link href="/privacy-policy" className="hover:text-cyan-400">
                 Privacy Policy
               </Link>
             </li>
             <li className="hover:bg-gray-100 group transition px-2 py-1 rounded">
-              <Link href="/" className="hover:text-cyan-400">
+              <Link href="/terms" className="hover:text-cyan-400">
                 Terms of Service
               </Link>
             </li>
           </ul>
+          <p className="mt-3 md:mt-0">
+            © {new Date().getFullYear()} M.Video. All rights reserved.
+          </p>
           {/*<div className="mt-4 md:mt-0">*/}
           {/*  <Link href="/" className="hover:text-cyan-400 mr-4">*/}
           {/*    Privacy Policy*/}

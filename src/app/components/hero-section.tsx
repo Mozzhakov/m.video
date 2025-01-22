@@ -13,10 +13,10 @@ export default function HeroSection({}: HeroSectionProps) {
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-gray-600 lg:text-7xl text-4xl mb-10 text-center">
+          <h1 className="text-gray-600 lg:text-7xl text-4xl md:text-5xl mb-10 text-center">
             Yana Mozzhakova
           </h1>
-          <p className="text-gray-600 lg:text-4xl text-2xl text-center mb-10 max-w-48 lg:max-w-none">
+          <p className="text-gray-600 lg:text-4xl text-2xl  md:text-3xl text-center mb-10 max-w-48 md:max-w-60 lg:max-w-none">
             Videographer & UGC creator
           </p>
           <SocialNetworks />

@@ -1,59 +1,79 @@
 [
   {
     "id": "1",
-    "name": "Coffee machine",
-    "url": "https://storage.googleapis.com/ugc-video/ugc/keurig_cofee_machine.mp4",
-    "description": "Unboxing Keurig: the perfect morning companion",
-    "poster": "/posters/ugc/coffee-machine.PNG"
-  },
-  {
-    "id": "2",
-    "name": "Menorah mask",
-    "url": "https://storage.googleapis.com/ugc-video/ugc/menorah_mask.mp4",
-    "description": "Promotional video for the cosmetic brand ‘Menorah’: showcasing a sheet face mask",
-    "poster": "/posters/ugc/menorah-mask.PNG"
-  },
-  {
-    "id": "3",
-    "name": "Menorah cream",
-    "url": "https://storage.googleapis.com/ugc-video/ugc/menorah_cream.mp4",
-    "description": "Promotional video for the cosmetic brand ‘Menorah’: featuring face and body creams",
-    "poster": "/posters/ugc/menorah-cream.PNG"
-  },
-  {
-    "id": "4",
-    "name": "Hibbett sneakers",
-    "url": "https://storage.googleapis.com/ugc-video/ugc/nike_air_jordan.mp4",
-    "description": "Unboxing Nike Air Jordan Tatum 3: the perfect blend of design and comfort",
-    "poster": "/posters/ugc/air-jordan.PNG"
-  },
-  {
-    "id": "5",
     "name": "Hibbett sneakers v.2",
     "url": "https://storage.googleapis.com/ugc-video/ugc/nike_airforce.mp4",
     "description": "Unboxing Nike Airforce 1 sneakers: style and details captured in every shot",
     "poster": "/posters/ugc/air-force.PNG"
   },
   {
+    "id": "2",
+    "name": "Menorah cream",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/menorah_cream.mp4",
+    "description": "Promotional video for the cosmetic brand ‘Menorah’: featuring face and body creams",
+    "poster": "/posters/ugc/menorah-cream.PNG"
+  },
+  {
+    "id": "3",
+    "name": "iPad unboxing",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/ipad-ugc.mp4",
+    "description": "Unboxing the new iPad: style and convenience for work and creativity",
+    "poster": "/posters/ugc/ipad-unboxing.PNG"
+  },
+  {
+    "id": "4",
+    "name": "KHS Black Tea",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/tea-ugc.mp4",
+    "description": "Brewing KHS Golden Black Tea: enjoying the natural flavor and aroma",
+    "poster": "/posters/ugc/khs-tea.PNG"
+  },
+  {
+    "id": "5",
+    "name": "iPad case and pencil",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/ipad-case-ugc.mp4",
+    "description": "Setting up the iPad: case and Apple Pencil for maximum convenience",
+    "poster": "/posters/ugc/ipad-case.PNG"
+  },
+  {
     "id": "6",
+    "name": "Coffee machine",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/keurig_cofee_machine.mp4",
+    "description": "Unboxing Keurig: the perfect morning companion",
+    "poster": "/posters/ugc/coffee-machine.PNG"
+  },
+  {
+    "id": "7",
+    "name": "Menorah mask",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/menorah_mask.mp4",
+    "description": "Promotional video for the cosmetic brand ‘Menorah’: showcasing a sheet face mask",
+    "poster": "/posters/ugc/menorah-mask.PNG"
+  },
+  {
+    "id": "8",
+    "name": "Hibbett sneakers",
+    "url": "https://storage.googleapis.com/ugc-video/ugc/nike_air_jordan.mp4",
+    "description": "Unboxing Nike Air Jordan Tatum 3: the perfect blend of design and comfort",
+    "poster": "/posters/ugc/air-jordan.PNG"
+  },
+  {
+    "id": "9",
     "name": "Ross unpacking",
     "url": "https://storage.googleapis.com/ugc-video/ugc/unpacking_ross.mov",
     "description": "Promotional video for the brand ‘Nescafé Dolce Gusto’: capsule coffee in ASMR format",
     "poster": "/posters/ugc/ross-unpacking.PNG"
   },
   {
-    "id": "7",
+    "id": "10",
     "name": "Workout",
     "url": "https://storage.googleapis.com/ugc-video/ugc/nike_kicks.mov",
     "description": "Sports-themed video: focusing on a workout and Nike sneakers",
     "poster": "/posters/ugc/workout.PNG"
   },
   {
-    "id": "8",
+    "id": "11",
     "name": "Pajama",
     "url": "https://storage.googleapis.com/ugc-video/ugc/virobnel_pajama.mp4",
     "description": "Video for the Ukrainian brand ‘Virobnel’: showcasing pajamas in a cozy home setting",
     "poster": "/posters/ugc/pajama.PNG"
   }
 ]
-

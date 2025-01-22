@@ -3,11 +3,14 @@ import React, { useState } from "react";
 import Logo from "@/app/components/logo";
 import NavLinks from "@/app/components/nav-links";
 import MobileMenuButton from "@/app/components/mobile-menu-button";
+import { usePathname } from "next/navigation";
 import { Link } from "react-scroll";
 
 export type PageHeaderProps = object;
 
 export default function PageHeader({}: PageHeaderProps) {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen); // Функция для изменения состояния
@@ -30,7 +33,11 @@ export default function PageHeader({}: PageHeaderProps) {
             </Link>
           </div>
 
-          <NavLinks isOpen={isOpen} onCloseMenu={closeMenu} />
+          <NavLinks
+            isOpen={isOpen}
+            onCloseMenu={closeMenu}
+            isHomePage={isHomePage}
+          />
         </div>
       </nav>
     </header>

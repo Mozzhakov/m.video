@@ -4,15 +4,20 @@ import { Link } from "react-scroll";
 export type NavLinksProps = {
   isOpen: boolean;
   onCloseMenu: () => void;
+  isHomePage: boolean;
 };
 
-export default function NavLinks({ isOpen, onCloseMenu }: NavLinksProps) {
+export default function NavLinks({
+  isOpen,
+  onCloseMenu,
+  isHomePage,
+}: NavLinksProps) {
   const links = [
-    { href: "home", label: "Home", isActive: false },
-    { href: "about-me", label: "About me", isActive: false },
-    { href: "ugc", label: "UGC", isActive: false },
-    { href: "videography", label: "Videography", isActive: false },
-    { href: "contacts", label: "Contacts", isActive: false },
+    { href: "home", label: "Home" },
+    { href: "about-me", label: "About me" },
+    { href: "ugc", label: "UGC" },
+    { href: "videography", label: "Videography" },
+    { href: "contacts", label: "Contacts" },
   ];
 
   return (
@@ -29,37 +34,50 @@ export default function NavLinks({ isOpen, onCloseMenu }: NavLinksProps) {
             key={index}
             className="hover:bg-gray-100 group transition px-2 py-1 rounded"
           >
-            <Link
-              onClick={onCloseMenu}
-              smooth={true}
-              to={link.href}
-              duration={500} // Время в миллисекундах для плавной анимации
-              offset={-71.09}
-              // href={link.href}
-              className={`block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition  ${
-                link.isActive
-                  ? "text-cyan-400 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700"
-                  : "text-gray-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700"
-              } lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700`}
-              aria-current={link.isActive ? "page" : undefined}
-            >
-              {link.label}
-            </Link>
+            {isHomePage ? (
+              <Link
+                onClick={onCloseMenu}
+                smooth={true}
+                to={link.href}
+                duration={500}
+                offset={-71.09}
+                className="block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                href={`/#${link.href}`}
+                onClick={onCloseMenu}
+                className="block text-lg py-2 pr-4 pl-3 group-hover:text-cyan-400 transition text-gray-600 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                {link.label}
+              </a>
+            )}
           </li>
         ))}
       </ul>
       <div className="mt-12">
-        <Link
-          to={links[links.length - 1].href}
-          // href={links[links.length - 1].href}
-          className=" lg:hidden rounded py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-[1.1]"
-          onClick={onCloseMenu}
-          offset={-71.09}
-          smooth={true}
-          duration={500}
-        >
-          Contact me
-        </Link>
+        {isHomePage ? (
+          <Link
+            to={links[links.length - 1].href}
+            className="lg:hidden rounded py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-[1.1]"
+            onClick={onCloseMenu}
+            offset={-71.09}
+            smooth={true}
+            duration={500}
+          >
+            Contact me
+          </Link>
+        ) : (
+          <a
+            href={`/#${links[links.length - 1].href}`}
+            className="lg:hidden rounded py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-[1.1]"
+            onClick={onCloseMenu}
+          >
+            Contact me
+          </a>
+        )}
       </div>
     </div>
   );

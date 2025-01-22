@@ -8,7 +8,10 @@ export interface SectionProps {
 
 export default function Section({ children, isEven, id }: SectionProps) {
   return (
-    <section className={`${isEven ? "bg-neutral-50" : "bg-gray-100"}`} id={id}>
+    <section
+      className={`${isEven ? "bg-neutral-50" : "bg-gray-100"} scroll-mt-[71.09px]`}
+      id={id}
+    >
       <div className="mx-auto max-w-screen-xl px-4 py-10 lg:px-10 lg:py-12">
         {children}
       </div>

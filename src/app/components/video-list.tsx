@@ -24,7 +24,7 @@ export default function VideoList({ videos }: VideoListProps) {
   return (
     <div data-aos="zoom-in">
       <ul
-        className="flex items-stretch gap-12 justify-around flex-wrap"
+        className="flex items-stretch gap-12 justify-center flex-wrap"
         // className="flex flex-row gap-12 justify-around overflow-scroll scroll-mt-4"
       >
         {videos.map((el: Video) => (

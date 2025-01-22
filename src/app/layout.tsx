@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import PageHeader from "@/app/components/page-header";
+import PageFooter from "@/app/components/page-footer";
 
 const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -17,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <div className="relative">
+          <PageHeader />
+          {children}
+          <PageFooter />
+        </div>
+      </body>
     </html>
   );
 }

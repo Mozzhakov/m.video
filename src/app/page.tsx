@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import PageHeader from "@/app/components/page-header";
+// import PageHeader from "@/app/components/page-header";
 import HeroSection from "@/app/components/hero-section";
 import AboutMe from "@/app/components/about-me";
 import Contacts from "@/app/components/contacts";
@@ -16,7 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import PageFooter from "@/app/components/page-footer";
+// import PageFooter from "@/app/components/page-footer";
 
 export interface VideoData {
   id: string;
@@ -34,33 +34,33 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="relative">
-      <PageHeader />
-      <main className="pt-[72px]">
-        <HeroSection />
-        <div>
-          <AboutMe isEven={false} />
-          <Ugc isEven={true} videos={ugcVideos} />
-          <Videography
-            isEven={false}
-            sport_videos={sportVideos}
-            beauty_videos={beautyVideos}
-            vlog_videos={vlogVideos}
-            portrait_videos={portraitVideos}
-            food_videos={foodVideos}
-          />
-          <Contacts isEven={true} />
-        </div>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          closeButton={true}
-          draggable
-          theme="colored"
+    // <div className="relative">
+    //   <PageHeader />
+    <main className="pt-[72px]">
+      <HeroSection />
+      <div>
+        <AboutMe isEven={false} />
+        <Ugc isEven={true} videos={ugcVideos} />
+        <Videography
+          isEven={false}
+          sport_videos={sportVideos}
+          beauty_videos={beautyVideos}
+          vlog_videos={vlogVideos}
+          portrait_videos={portraitVideos}
+          food_videos={foodVideos}
         />
-      </main>
-      <PageFooter />
-    </div>
+        <Contacts isEven={true} />
+      </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeButton={true}
+        draggable
+        theme="colored"
+      />
+    </main>
+    //   <PageFooter />
+    // </div>
   );
 }

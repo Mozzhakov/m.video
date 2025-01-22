@@ -7,7 +7,7 @@ export interface TitleProps {
 export default function Title({ children }: TitleProps) {
   return (
     <div data-aos="fade-right">
-      <h1 className="text-cyan-400 font-bold text-5xl lg:text-6xl mb-6">
+      <h1 className="text-cyan-400 font-bold text-5xl text-center lg:text-left lg:text-6xl mb-6">
         {children}
       </h1>
     </div>
