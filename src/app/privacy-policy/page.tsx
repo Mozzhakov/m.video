@@ -71,10 +71,10 @@ export default function Page({}: PageProps) {
               <p className="text-gray-600 mt-4">
                 To exercise these rights, please contact us at{" "}
                 <a
-                  href="mailto:mozzhakova.21@gmail.com"
-                  className="text-blue-500 underline"
+                  href="mailto:m.video.cooperation@gmail.com"
+                  className="text-cyan-400 underline"
                 >
-                  mozzhakova.21@gmail.com
+                  m.video.cooperation@gmail.com
                 </a>
                 .
               </p>
@@ -131,10 +131,10 @@ export default function Page({}: PageProps) {
                 <li>
                   Email:{" "}
                   <a
-                    href="mailto:mozzhakova.21@gmail.com"
+                    href="mailto:m.video.cooperation@gmail.com"
                     className="text-cyan-400 underline"
                   >
-                    mozzhakova.21@gmail.com
+                    m.video.cooperation@gmail.com
                   </a>
                 </li>
                 <li>Address: The Woodlands, Texas</li>

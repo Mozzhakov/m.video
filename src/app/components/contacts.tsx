@@ -72,8 +72,8 @@ export default function Contacts({ isEven }: ContactsProps) {
             <div className="flex items-center gap-2">
               <LuMail className="lg:w-7 lg:h-7 w-5 h-5 text-gray-600 group-hover:text-cyan-400 transition" />
               <p className="text-lg text-gray-600 hover:text-cyan-400 transition">
-                <a href="mailto:mozzhakova.21@gmail.com">
-                  mozzhakova.21@gmail.com
+                <a href="mailto:m.video.cooperation@gmail.com">
+                  m.video.cooperation@gmail.com
                 </a>
               </p>
             </div>

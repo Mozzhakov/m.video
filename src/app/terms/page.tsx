@@ -163,10 +163,10 @@ export default function Page({}: PageProps) {
                 <li>
                   Email:{" "}
                   <a
-                    href="mailto:mozzhakova.21@gmail.com"
+                    href="mailto:m.video.cooperation@gmail.com"
                     className="text-cyan-400 underline"
                   >
-                    mozzhakova.21@gmail.com
+                    m.video.cooperation@gmail.com
                   </a>
                 </li>
                 <li>Address: The Woodlands, Texas</li>
