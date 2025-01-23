@@ -218,7 +218,7 @@ export default function VideoSlider({
                       ref={(elem) => {
                         if (elem) videoRef.current[video.id] = elem;
                       }}
-                      className="rounded-[35px] w-full h-[500px] object-cover"
+                      className="rounded-[35px] w-full h-[444px] object-contain"
                       controls
                       preload="none"
                       poster={video.poster}
