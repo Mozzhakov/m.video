@@ -4,41 +4,41 @@
     "name": "Birthday party",
     "url": "https://storage.googleapis.com/ugc-video/mini%20vlogs/birthday_party.mp4",
     "description": "Capturing a birthday moment",
-    "poster": "/posters/vlogs/birthday-party.PNG"
+    "poster": "/posters/vlogs/birthday-party.webp"
   },
   {
     "id": "2",
     "name": "Birthday party v.2",
     "url": "https://storage.googleapis.com/ugc-video/mini%20vlogs/birthday_party_2.mp4",
     "description": "Capturing a birthday moment v.2",
-    "poster": "/posters/vlogs/birthday-party-2.PNG"
+    "poster": "/posters/vlogs/birthday-party-2.webp"
   },
   {
     "id": "3",
     "name": "Event report",
     "url": "https://storage.googleapis.com/ugc-video/mini%20vlogs/event_report.mp4",
     "description": "Report from Christmas event",
-    "poster": "/posters/vlogs/event-report.PNG"
+    "poster": "/posters/vlogs/event-report.webp"
   },
   {
     "id": "4",
     "name": "Mallorca vibe",
     "url": "https://storage.googleapis.com/ugc-video/mini%20vlogs/mallorca_vibe.mp4",
     "description": "Beautiful shots from Mallorca",
-    "poster": "/posters/vlogs/mallorca.PNG"
+    "poster": "/posters/vlogs/mallorca.webp"
   },
   {
     "id": "5",
     "name": "Meet up vlog",
     "url": "https://storage.googleapis.com/ugc-video/mini%20vlogs/meet_up_vlog.mp4",
     "description": "Mini vlog of a girls' meetup",
-    "poster": "/posters/vlogs/meet-up.PNG"
+    "poster": "/posters/vlogs/meet-up.webp"
   },
   {
     "id": "6",
     "name": "Moto day",
     "url": "https://storage.googleapis.com/ugc-video/mini%20vlogs/moto_day.mp4",
     "description": "Shooting the adrenaline rush of a motorcycle and ATV adventure",
-    "poster": "/posters/vlogs/moto-day.PNG"
+    "poster": "/posters/vlogs/moto-day.webp"
   }
 ]

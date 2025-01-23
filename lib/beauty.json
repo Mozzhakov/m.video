@@ -4,27 +4,27 @@
     "name": "Beauty salon",
     "url": "https://storage.googleapis.com/ugc-video/beauty/beaury_salon.mp4",
     "description": "Filming a figure correction massage for a toned silhouette",
-    "poster": "/posters/beauty/beauty-salon.PNG"
+    "poster": "/posters/beauty/beauty-salon.webp"
   },
   {
     "id": "2",
     "name": "Body sculpting massage",
     "url": "https://storage.googleapis.com/ugc-video/beauty/body_sculpting_massage.mp4",
     "description": "Filming a figure correction massage for a toned silhouette",
-    "poster": "/posters/beauty/body-massage.PNG"
+    "poster": "/posters/beauty/body-massage.webp"
   },
   {
     "id": "3",
     "name": "Face mask",
     "url": "https://storage.googleapis.com/ugc-video/beauty/face_mask.mp4",
     "description": "Shooting a soothing beauty treatment: Alginate mask in action",
-    "poster": "/posters/beauty/face-mask.PNG"
+    "poster": "/posters/beauty/face-mask.webp"
   },
   {
     "id": "4",
     "name": "Manicure",
     "url": "https://storage.googleapis.com/ugc-video/beauty/manicure.mp4",
     "description": "Documenting a high-quality manicure session for the salon",
-    "poster": "/posters/beauty/manicure.PNG"
+    "poster": "/posters/beauty/manicure.webp"
   }
 ]

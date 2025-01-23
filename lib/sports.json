@@ -4,34 +4,34 @@
     "name": "Boxing session",
     "url": "https://storage.googleapis.com/ugc-video/sports%20%26%20entertainment/boxing_session.mp4",
     "description": "Boxing training shoot",
-    "poster": "/posters/sports/boxing.PNG"
+    "poster": "/posters/sports/boxing.webp"
   },
   {
     "id": "2",
     "name": "Stress-free zone",
     "url": "https://storage.googleapis.com/ugc-video/sports%20%26%20entertainment/stress-free_zone.mp4",
     "description": "Promotional video shoot for the anti-stress room",
-    "poster": "/posters/sports/stress-free-zone.PNG"
+    "poster": "/posters/sports/stress-free-zone.webp"
   },
   {
     "id": "3",
     "name": "Target shooting",
     "url": "https://storage.googleapis.com/ugc-video/sports%20%26%20entertainment/target_shooting.mp4",
     "description": "Promotional video for the new service 'Target shooting' in the anti-stress room",
-    "poster": "/posters/sports/target-shooting.PNG"
+    "poster": "/posters/sports/target-shooting.webp"
   },
   {
     "id": "4",
     "name": "Target shooting v.2",
     "url": "https://storage.googleapis.com/ugc-video/sports%20%26%20entertainment/target_shooting_2.mov",
     "description": "Target shooting in the stress-relief room",
-    "poster": "/posters/sports/target-shooting-2.PNG"
+    "poster": "/posters/sports/target-shooting-2.webp"
   },
   {
     "id": "5",
     "name": "Workout focus",
     "url": "https://storage.googleapis.com/ugc-video/sports%20%26%20entertainment/workout_focus.mp4",
     "description": "Personal trainer workout shoot",
-    "poster": "/posters/sports/workout-focus.PNG"
+    "poster": "/posters/sports/workout-focus.webp"
   }
 ]

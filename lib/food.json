@@ -4,20 +4,20 @@
     "name": "Aperol Spritz",
     "url": "https://storage.googleapis.com/ugc-video/food/aperol_sprits.mp4",
     "description": "Capturing the process of mixing up a refreshing Aperol Spritz cocktail",
-    "poster": "/posters/food/aperol-spritz.PNG"
+    "poster": "/posters/food/aperol-spritz.webp"
   },
   {
     "id": "2",
     "name": "Blue lagoon",
     "url": "https://storage.googleapis.com/ugc-video/food/blue_lagoon.mp4",
     "description": "Through my lens: The making of a refreshing Blue Lagoon cocktail",
-    "poster": "/posters/food/blue-lagoon.PNG"
+    "poster": "/posters/food/blue-lagoon.webp"
   },
   {
     "id": "3",
     "name": "Lemon cocktail",
     "url": "https://storage.googleapis.com/ugc-video/food/lemon_cocktail.mp4",
     "description": "Filming the refreshing moments as a lemon cocktail is brought to life",
-    "poster": "/posters/food/lemon-cocktail.PNG"
+    "poster": "/posters/food/lemon-cocktail.webp"
   }
 ]
