@@ -5,12 +5,14 @@ export type NavLinksProps = {
   isOpen: boolean;
   onCloseMenu: () => void;
   isHomePage: boolean;
+  openModal: () => void;
 };
 
 export default function NavLinks({
   isOpen,
   onCloseMenu,
   isHomePage,
+  openModal,
 }: NavLinksProps) {
   const links = [
     { href: "home", label: "Home" },
@@ -19,6 +21,11 @@ export default function NavLinks({
     { href: "videography", label: "Videography" },
     { href: "contacts", label: "Contacts" },
   ];
+
+  const handleClick = () => {
+    onCloseMenu(); // Закрытие меню
+    openModal(); // Закрытие модального окна
+  };
 
   return (
     <div
@@ -59,21 +66,21 @@ export default function NavLinks({
       </ul>
       <div className="mt-12">
         {isHomePage ? (
-          <Link
-            to={links[links.length - 1].href}
+          <button
+            // to={links[links.length - 1].href}
             className="lg:hidden rounded py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-[1.1]"
-            onClick={onCloseMenu}
-            offset={-71.09}
-            smooth={true}
-            duration={500}
+            // offset={-71.09}
+            // smooth={true}
+            // duration={500}
+            onClick={handleClick}
           >
             Contact me
-          </Link>
+          </button>
         ) : (
           <a
             href={`/#${links[links.length - 1].href}`}
             className="lg:hidden rounded py-2 px-6 bg-cyan-400 text-white transition shadow hover:scale-[1.1]"
-            onClick={onCloseMenu}
+            onClick={handleClick}
           >
             Contact me
           </a>

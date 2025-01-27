@@ -4,6 +4,8 @@ import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import PageHeader from "@/app/components/page-header";
 import PageFooter from "@/app/components/page-footer";
+import { ModalProvider } from "@/app/components/modal-context";
+import ModalWindow from "@/app/components/modal-window";
 
 const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -20,11 +22,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <div className="relative">
-          <PageHeader />
-          {children}
-          <PageFooter />
-        </div>
+        <ModalProvider>
+          <div className="relative">
+            <PageHeader />
+            {children}
+            <PageFooter />
+          </div>
+          {/* Модальное окно подключено */}
+          <ModalWindow>
+            <h2 className="text-lg font-bold">Модальное окно</h2>
+            <p>Контент внутри модального окна.</p>
+          </ModalWindow>
+        </ModalProvider>
       </body>
     </html>
   );

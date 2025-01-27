@@ -5,6 +5,7 @@ import Title from "@/app/components/title";
 import Image from "next/image";
 import { LuPhoneCall, LuMail } from "react-icons/lu";
 import { toast } from "react-toastify";
+import SocialNetworks from "@/app/components/social-networks";
 
 export type ContactsProps = { isEven: boolean };
 
@@ -69,6 +70,7 @@ export default function Contacts({ isEven }: ContactsProps) {
             or just to say hi!
           </p>
           <div className="flex flex-col gap-4 mb-8">
+            <SocialNetworks />
             <div className="flex items-center gap-2">
               <LuMail className="lg:w-7 lg:h-7 w-5 h-5 text-gray-600 group-hover:text-cyan-400 transition" />
               <p className="text-lg text-gray-600 hover:text-cyan-400 transition">

@@ -16,6 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ModalWindow from "@/app/components/modal-window";
 // import PageFooter from "@/app/components/page-footer";
 
 export interface VideoData {
@@ -27,6 +28,7 @@ export interface VideoData {
 }
 
 export default function Home() {
+  const [isModalVisible, setIsModalVisible] = React.useState(true);
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -34,8 +36,6 @@ export default function Home() {
     });
   }, []);
   return (
-    // <div className="relative">
-    //   <PageHeader />
     <main className="pt-[72px]">
       <HeroSection />
       <div>
@@ -59,8 +59,11 @@ export default function Home() {
         draggable
         theme="colored"
       />
+      {isModalVisible && (
+        <ModalWindow closeModal={() => setIsModalVisible(false)}>
+          qwe
+        </ModalWindow>
+      )}
     </main>
-    //   <PageFooter />
-    // </div>
   );
 }
