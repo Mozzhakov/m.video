@@ -17,14 +17,14 @@ export default function NavLinks({
   const links = [
     { href: "home", label: "Home" },
     { href: "about-me", label: "About me" },
-    { href: "ugc", label: "UGC" },
     { href: "videography", label: "Videography" },
+    { href: "ugc", label: "UGC" },
     { href: "contacts", label: "Contacts" },
   ];
 
   const handleClick = () => {
-    onCloseMenu(); // Закрытие меню
-    openModal(); // Закрытие модального окна
+    onCloseMenu();
+    openModal();
   };
 
   return (

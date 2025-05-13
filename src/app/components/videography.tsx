@@ -142,7 +142,7 @@ export interface VideographyProps {
 
 // Функция для определения screenSize
 export const getScreenSize = (
-  width: number,
+  width: number
 ): "mobile" | "tablet" | "desktop" => {
   if (width <= 768) return "mobile";
   if (width <= 1024) return "tablet";
@@ -154,7 +154,7 @@ export const renderCategory = (
   // title?: string,
   videos: Video[],
   screenSize: string,
-  sliderId: string,
+  sliderId: string
 ) => (
   <>
     {screenSize === "mobile" ? (
@@ -178,7 +178,7 @@ export default function Videography({
   food_videos,
 }: VideographyProps) {
   const [screenSize, setScreenSize] = useState<"mobile" | "tablet" | "desktop">(
-    "desktop",
+    "desktop"
   );
 
   useEffect(() => {
@@ -193,12 +193,12 @@ export default function Videography({
   return (
     <Section isEven={isEven} id={"videography"}>
       <Title>Videography</Title>
+      <Subtitle>Events</Subtitle>
+      {renderCategory(vlog_videos, screenSize, "vlogs")}
       <Subtitle>Sport & Entertainment</Subtitle>
       {renderCategory(sport_videos, screenSize, "sports")}
       <Subtitle>Beauty</Subtitle>
       {renderCategory(beauty_videos, screenSize, "beauty")}
-      <Subtitle>Mini-vlogs</Subtitle>
-      {renderCategory(vlog_videos, screenSize, "vlogs")}
       <Subtitle>Portrait</Subtitle>
       {renderCategory(portrait_videos, screenSize, "portraits")}
       <Subtitle>Food</Subtitle>

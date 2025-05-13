@@ -27,7 +27,7 @@ export default function ContactForm({}: ContactFormProps) {
         toast.success("Message successfully sent");
         setName("");
         setEmail("");
-        setMessage(""); // Очистка данных формы
+        setMessage("");
       } else {
         toast.error(`Error: ${result.error}`);
       }
@@ -39,7 +39,7 @@ export default function ContactForm({}: ContactFormProps) {
   }
 
   const onSubmitClick = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Предотвращаем перезагрузку страницы
+    e.preventDefault();
     if (!name || !email || !message) {
       toast.warning("Please fill out all fields.");
       return;
@@ -49,7 +49,7 @@ export default function ContactForm({}: ContactFormProps) {
       email: email,
       message: message,
     };
-    sendMessage(formData); // Отправляем данные
+    sendMessage(formData);
   };
 
   return (

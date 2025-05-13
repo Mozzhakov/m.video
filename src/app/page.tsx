@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ModalWindow from "@/app/components/modal-window";
-// import PageFooter from "@/app/components/page-footer";
+import { useModal } from "./components/modal-context";
 
 export interface VideoData {
   id: string;
@@ -28,7 +28,7 @@ export interface VideoData {
 }
 
 export default function Home() {
-  const [isModalVisible, setIsModalVisible] = React.useState(true);
+  const { isModalOpen } = useModal();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -40,15 +40,15 @@ export default function Home() {
       <HeroSection />
       <div>
         <AboutMe isEven={false} />
-        <Ugc isEven={true} videos={ugcVideos} />
         <Videography
-          isEven={false}
+          isEven={true}
           sport_videos={sportVideos}
           beauty_videos={beautyVideos}
           vlog_videos={vlogVideos}
           portrait_videos={portraitVideos}
           food_videos={foodVideos}
         />
+        <Ugc isEven={false} videos={ugcVideos} />
         <Contacts isEven={true} />
       </div>
       <ToastContainer
@@ -59,11 +59,7 @@ export default function Home() {
         draggable
         theme="colored"
       />
-      {isModalVisible && (
-        <ModalWindow closeModal={() => setIsModalVisible(false)}>
-          qwe
-        </ModalWindow>
-      )}
+      {isModalOpen && <ModalWindow />}
     </main>
   );
 }

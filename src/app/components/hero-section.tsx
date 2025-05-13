@@ -17,7 +17,7 @@ export default function HeroSection({}: HeroSectionProps) {
             Yana Mozzhakova
           </h1>
           <p className="text-gray-600 lg:text-4xl text-2xl  md:text-3xl text-center mb-10 max-w-48 md:max-w-60 lg:max-w-none">
-            Videographer & UGC creator
+            Videographer & Social media consultant
           </p>
           <SocialNetworks />
         </div>
